@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nativecapsulelibrary">
+
+    <application
+        android:allowBackup="true">
+        <activity
+            android:name=".NativeCapsuleActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+</manifest>

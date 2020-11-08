@@ -1,2 +1,4 @@
+include ':NativeCapsuleLibrary'
+include ':dynamicfeature'
 include ':app'
 rootProject.name = "NativeCapsule"
