@@ -11,4 +11,5 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_dynamicfeature">Direction</string>
+    <string name="title_reactnativecapsule">ReactNativeCapsule</string>
 </resources>

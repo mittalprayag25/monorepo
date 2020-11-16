@@ -35,6 +35,7 @@ public class GalleryFragment extends Fragment {
         final TextView textView = root.findViewById(R.id.text_gallery);
         Button btn = root.findViewById(R.id.directionButton);
         Button nativeBtn = root.findViewById(R.id.nativecapsuleButton);
+        Button rnCapsuleBtn = root.findViewById(R.id.rnCapsuleBtn);
         manager = SplitInstallManagerFactory.create(getActivity());
 
         galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
@@ -68,6 +69,18 @@ public class GalleryFragment extends Fragment {
                 intent.setClassName(getActivity(), "com.example.nativecapsulelibrary.NativeCapsuleActivity");
                 startActivity(intent);
 
+            }
+        });
+
+        rnCapsuleBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (manager.getInstalledModules().contains("ReactNativeCapsule")) {
+                    Intent i = new Intent("com.prayag.reactnativecapsule.RnInteractiveActivity");
+                    startActivity(i);
+                } else {
+                    System.out.println("no feature");
+                }
             }
         });
         return root;

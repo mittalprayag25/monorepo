@@ -34,6 +34,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Native Capsule Button" />
+        <Button
+            android:id="@+id/rnCapsuleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="React Native Capsule" />
     </LinearLayout>
 
 
